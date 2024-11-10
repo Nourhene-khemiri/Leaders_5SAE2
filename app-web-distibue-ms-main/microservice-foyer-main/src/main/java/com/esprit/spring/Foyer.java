@@ -1,12 +1,13 @@
 package com.esprit.spring;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Foyer {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idFoyer;
     private String nomFoyer ;
     private Long capaciteFoyer;

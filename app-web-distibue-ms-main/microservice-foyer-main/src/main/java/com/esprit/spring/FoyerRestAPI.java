@@ -33,4 +33,9 @@ public class FoyerRestAPI {
         foyerService.deleteFoyer(id);
     }
 
+    @GetMapping("/universite/afficherUniversites")
+    public List<Universite> getAllUniversites(){
+        return foyerService.getAllUniversites();
+    }
+
 }
